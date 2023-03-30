@@ -20,7 +20,7 @@ public class RepositorioDeSelosEmMemoria implements RepositorioDeSelos {
     @Override
     public List<Selo> buscaSeloPorCpf(CPF cpf) {
         return this.selos.stream()
-                .filter(selo -> selo.getCpfDoAluno())
+                .filter(selo -> selo.getCpfDoAluno().equals(cpf))
                 .collect(Collectors.toList());
     }
 }

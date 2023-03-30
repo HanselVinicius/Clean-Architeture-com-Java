@@ -5,8 +5,9 @@ public class CPF {
     private String digitos;
 
     public CPF(String digitos) {
-        if (!digitos.matches("([0-9]{2}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[\\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[-]?[0-9]{2})\n")){
-            throw new IllegalArgumentException("cpf invalido");
+        String regex = "([0-9]{3}[\\.]?[0-9]{3}[\\.]?[0-9]{3}-[0-9]{2})";
+        if (!digitos.matches(regex)) {
+            throw new IllegalArgumentException("CPF inválido: " + digitos);
         }
         this.digitos = digitos;
     }
