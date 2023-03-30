@@ -1,12 +1,12 @@
 package tests;
 
-import br.com.alura.escola.aplicacao.aluno.matricular.MatricularAluno;
-import br.com.alura.escola.aplicacao.aluno.matricular.MatricularAlunoDto;
-import br.com.alura.escola.domain.PublicadorDeEventos;
-import br.com.alura.escola.domain.aluno.Aluno;
-import br.com.alura.escola.domain.aluno.CPF;
-import br.com.alura.escola.domain.aluno.LogDeAlunoMatriculado;
-import br.com.alura.escola.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
+import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
+import br.com.alura.escola.academico.domain.PublicadorDeEventos;
+import br.com.alura.escola.academico.domain.aluno.Aluno;
+import br.com.alura.escola.academico.domain.aluno.CPF;
+import br.com.alura.escola.academico.domain.aluno.LogDeAlunoMatriculado;
+import br.com.alura.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,8 +1,8 @@
 package tests;
 
-import br.com.alura.escola.domain.aluno.Aluno;
-import br.com.alura.escola.domain.aluno.CPF;
-import br.com.alura.escola.domain.aluno.Email;
+import br.com.alura.escola.academico.domain.aluno.Aluno;
+import br.com.alura.escola.academico.domain.aluno.CPF;
+import br.com.alura.escola.academico.domain.aluno.Email;
 import org.junit.Before;
 import org.junit.Test;
 

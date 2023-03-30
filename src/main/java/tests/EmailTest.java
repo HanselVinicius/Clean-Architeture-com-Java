@@ -1,6 +1,6 @@
 package tests;
 
-import br.com.alura.escola.domain.aluno.Email;
+import br.com.alura.escola.academico.domain.aluno.Email;
 import org.junit.Assert;
 import org.junit.Test;
 
