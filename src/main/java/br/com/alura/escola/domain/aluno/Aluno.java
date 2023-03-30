@@ -3,6 +3,7 @@ package br.com.alura.escola.domain.aluno;
 import java.util.ArrayList;
 import java.util.List;
 
+//AGGREGATE ROOT
 public class Aluno {
 
 
@@ -22,11 +23,14 @@ public class Aluno {
     }
 
     public void adcionaTelefone(String ddd , String numero){
+        if (telefones.size() == 2){
+            throw new TelefoneMaximoException();
+        }
         this.telefones.add(new Telefone(ddd,numero));
     }
 
-    public String getCpf() {
-        return cpf.getDigitos();
+    public CPF getCpf() {
+        return cpf;
     }
 
     public String getNome() {

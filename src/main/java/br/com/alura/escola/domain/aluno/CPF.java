@@ -14,4 +14,12 @@ public class CPF {
     public String getDigitos() {
         return digitos;
     }
+
+
+    @Override
+    public String toString() {
+        return "CPF{" +
+                "digitos='" + digitos + '\'' +
+                '}';
+    }
 }

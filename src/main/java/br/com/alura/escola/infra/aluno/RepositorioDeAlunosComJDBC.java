@@ -22,12 +22,12 @@ public class RepositorioDeAlunosComJDBC  implements RepositorioDeAlunos {
         try {
             String sql = "INSERT INTO ALUNOS VALUES(?,?,?)";
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1,aluno.getCpf());
+            ps.setString(1,aluno.getCpf().toString());
             ps.setString(2,aluno.getNome());
             ps.setString(3,aluno.getEmail());
             ps.execute();
 
-            sql = "INSERT INTO ALUNOS VALUES(?,?)";
+            sql = "INSERT INTO TELEFONE VALUES(?,?)";
             ps = connection.prepareStatement(sql);
             for (Telefone telefone: aluno.getTelefones()) {
                 ps.setString(1,telefone.getDdd());

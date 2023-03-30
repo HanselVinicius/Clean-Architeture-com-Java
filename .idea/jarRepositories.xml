@@ -12,9 +12,19 @@
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="maven-criar-objects" />
+      <option name="name" value="maven-criar-objects" />
+      <option name="url" value="http://californio.keynet.com.br:5858/repository/maven-criar-objects/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-criar-libs" />
+      <option name="name" value="maven-criar-libs" />
+      <option name="url" value="http://californio.keynet.com.br:5858/repository/maven-criar-libs/" />
     </remote-repository>
   </component>
 </project>
