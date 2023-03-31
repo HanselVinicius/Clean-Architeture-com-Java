@@ -2,9 +2,9 @@ package tests;
 
 import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAluno;
 import br.com.alura.escola.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
-import br.com.alura.escola.academico.domain.PublicadorDeEventos;
+import br.com.alura.escola.shared.dominio.evento.PublicadorDeEventos;
 import br.com.alura.escola.academico.domain.aluno.Aluno;
-import br.com.alura.escola.academico.domain.aluno.CPF;
+import br.com.alura.escola.shared.dominio.CPF;
 import br.com.alura.escola.academico.domain.aluno.LogDeAlunoMatriculado;
 import br.com.alura.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 import org.junit.Test;
@@ -20,7 +20,7 @@ public class MatricularAlunoTest {
         // Mock -> Mockito
         RepositorioDeAlunosEmMemoria repositorio = new RepositorioDeAlunosEmMemoria();
         PublicadorDeEventos publicador = new PublicadorDeEventos();
-        publicador.Adcionar(new LogDeAlunoMatriculado());
+        publicador.adcionar(new LogDeAlunoMatriculado());
         MatricularAluno userCase = new MatricularAluno(repositorio,publicador);
 
         MatricularAlunoDto dados = new MatricularAlunoDto("Fulano",

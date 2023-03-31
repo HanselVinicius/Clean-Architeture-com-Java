@@ -2,7 +2,7 @@ package br.com.alura.escola.gameficacao.infra.selo;
 
 import br.com.alura.escola.gameficacao.dominio.selo.RepositorioDeSelos;
 import br.com.alura.escola.gameficacao.dominio.selo.Selo;
-import br.com.alura.escola.academico.domain.aluno.CPF;
+import br.com.alura.escola.shared.dominio.CPF;
 
 import java.util.ArrayList;
 import java.util.List;
