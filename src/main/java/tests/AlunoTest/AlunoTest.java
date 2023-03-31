@@ -1,4 +1,4 @@
-package tests;
+package tests.AlunoTest;
 
 import br.com.alura.escola.academico.domain.aluno.Aluno;
 import br.com.alura.escola.shared.dominio.CPF;
